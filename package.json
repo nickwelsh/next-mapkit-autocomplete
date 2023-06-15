@@ -4,6 +4,7 @@
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
+		"dev:doppler": "doppler run -- pnpm dev",
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint"
