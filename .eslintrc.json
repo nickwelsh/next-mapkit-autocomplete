@@ -1,0 +1,26 @@
+{
+  "extends": [
+    "plugin:unicorn/recommended",
+    "plugin:import/recommended",
+    "next/core-web-vitals",
+    "prettier"
+  ],
+  "rules": {
+    "@next/next/no-img-element": "off",
+    "unicorn/numeric-separators-style": [
+      "error",
+      {
+        "onlyIfContainsSeparator": true
+      }
+    ],
+    "unicorn/prevent-abbreviations": [
+      "error",
+      {
+        "replacements": {
+          "props": false,
+          "ref": false
+        }
+      }
+    ]
+  }
+}
