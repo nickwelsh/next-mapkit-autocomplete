@@ -2,14 +2,25 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+First, install the dependencies:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
+```
+
+[Create a Maps identifier and a private key](https://developer.apple.com/documentation/mapkitjs/creating_a_maps_identifier_and_a_private_key), then set your environment variables:
+
+```
+MAPKIT_KEY=<The private key from your Apple Developer Account>
+MAPKIT_KEY_ID=<10-character key identifier of the private key>
+MAPKIT_TEAM_ID=<Your Apple Developer Team ID>
+```
+
+Finally, run the development server:
+```bash
 pnpm dev
+# or if you're using Doppler for secrets management
+pnpm dev:doppler
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
